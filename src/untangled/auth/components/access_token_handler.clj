@@ -7,7 +7,7 @@
             [clj-http.client :as http]
             [clojure.data.json :as json]
             [taoensso.timbre :as log]
-            [untangled.server.impl.jwt-validation :refer :all]
+            [untangled.auth.jwt-validation :refer :all]
             [bidi.bidi :as bidi]))
 
 (defn- add-claims-to-request
