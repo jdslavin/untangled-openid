@@ -1,10 +1,10 @@
-(ns untangled.auth.jwt-validation-spec
+(ns untangled.openid.jwt-validation-spec
   (:require  [clojure.test :refer :all]
              [clj-jwt.core  :refer :all]
              [clj-jwt.key   :refer [private-key public-key]]
              [clj-time.core :refer [now plus days minus]]
              [untangled-spec.core :refer [specification behavior provided component assertions]]
-             [untangled.auth.jwt-validation :refer :all]))
+             [untangled.openid.jwt-validation :refer :all]))
 
 (def claim
   {:iss "foobar"

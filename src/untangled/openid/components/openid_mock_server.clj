@@ -1,4 +1,4 @@
-(ns untangled.auth.components.openid-mock-server
+(ns untangled.openid.components.openid-mock-server
   (:require
     [ring.util.response :refer [get-header]]
     [clojure.string :refer [split]]

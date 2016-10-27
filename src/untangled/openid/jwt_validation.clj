@@ -1,4 +1,4 @@
-(ns untangled.auth.jwt-validation
+(ns untangled.openid.jwt-validation
   (:require
     [clj-jwt.core :refer :all]
     [clj-jwt.key :refer [private-key public-key public-key-from-string]]

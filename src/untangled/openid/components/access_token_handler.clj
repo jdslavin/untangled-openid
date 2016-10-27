@@ -1,4 +1,4 @@
-(ns untangled.auth.components.access-token-handler
+(ns untangled.openid.components.access-token-handler
   (:require [ring.middleware.cookies :refer [wrap-cookies]]
             [ring.util.response :refer [get-header]]
             [clojure.string :refer [split]]
@@ -7,8 +7,7 @@
             [clj-http.client :as http]
             [clojure.data.json :as json]
             [taoensso.timbre :as log]
-            [untangled.auth.jwt-validation :refer :all]
-            [bidi.bidi :as bidi]))
+            [untangled.openid.jwt-validation :refer :all]))
 
 (defn- add-claims-to-request
   "Adds a :user to the request, which is a map of claims."

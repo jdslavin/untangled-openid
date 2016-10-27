@@ -1,7 +1,7 @@
-(ns untangled.auth.components.openid-mock-server-spec
+(ns untangled.openid.components.openid-mock-server-spec
   (:require
     [untangled-spec.core :refer [component specification behavior provided assertions]]
-    [untangled.auth.components.openid-mock-server :as mock]
+    [untangled.openid.components.openid-mock-server :as mock]
     [clj-jwt.core :refer :all :exclusion [record?]]
     [clj-jwt.key :refer [private-key public-key]]
     [ring.mock.request :as rm]

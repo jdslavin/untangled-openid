@@ -1,4 +1,4 @@
-(ns untangled.auth.components.access-token-handler-spec
+(ns untangled.openid.components.access-token-handler-spec
   (:require [clojure.test :as t]
             [clojure.set :as set]
             [clj-jwt.core :refer :all]
@@ -6,7 +6,7 @@
             [clj-time.core :refer [now plus days minus]]
             [ring.mock.request :refer [request]]
             [untangled-spec.core :refer [specification behavior provided component assertions]]
-            [untangled.auth.components.access-token-handler :refer :all]
+            [untangled.openid.components.access-token-handler :refer :all]
             [taoensso.timbre :as timbre]))
 
 (t/use-fixtures
